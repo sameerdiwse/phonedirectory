@@ -8,24 +8,24 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name="")
+@Table(name="ContactTable")
 @Data
 public class Contact 
 { 
    @Id	
    private int cid;
-   @Column(name="")
+   @Column(name="contactid")
    private int phone;
-   @Column(name="name")
+   @Column(name="description")
    private String description;
-   @Column(name="")
+   @Column(name="contactname")
    private String name;
-   @Column(name="")
+   @Column(name="contactnickname")
    private String nickName;
-   @Column(name="")
+   @Column(name="contactprofession")
    private String profession;
-   @Column(name="")
+   @Column(name="contactemail")
    private String email;
-   @Column(name="")
+   @Column(name="contactimageurl")
    private String imageUrl;
 }

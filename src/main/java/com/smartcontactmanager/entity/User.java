@@ -14,18 +14,18 @@ public class User
 {
 	@Id
    private int id;
-	@Column(name="")
+	@Column(name="useremail")
    private String email;
-	@Column(name = "")
+	@Column(name = "userpassword")
    private String password;
-	@Column(name="")
+	@Column(name="userimageurl")
    private String imageUrl;
-	@Column(name="")
+	@Column(name="userabout")
    private String about;
-	@Column(name="")
+	@Column(name="username")
    private String name;
-	@Column(name="")
+	@Column(name="userrole")
    private String role;
-	@Column(name="")
+	@Column(name="userenabled")
    private boolean enabled;
 }
