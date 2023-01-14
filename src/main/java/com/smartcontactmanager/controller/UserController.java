@@ -8,6 +8,6 @@ public class UserController {
     @RequestMapping("/home")  
 	public String home()
 	{
-		return "NewFile";
+		return "HomePage";
 	}
 }
