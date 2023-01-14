@@ -13,11 +13,9 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import lombok.Data;
 
 @Entity
 @Table(name = "UserTable")
-@Data
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>This is a jsp page!</h1>
+<h1>This is the new file!</h1>
 </body>
 </html>
