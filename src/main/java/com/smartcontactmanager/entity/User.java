@@ -35,7 +35,7 @@ public class User {
 	@Column(name = "userenabled")
 	private boolean enabled;
 	
-	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "user")
 	private List<User> userList = new ArrayList<>();
 
 	public int getId() {
