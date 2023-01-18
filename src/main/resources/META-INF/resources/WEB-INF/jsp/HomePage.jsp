@@ -5,12 +5,18 @@
 <html>
 <head>
 <style>
-.navbar {
+/* .navbar {
 	width: 100%;
+} */
+body {
+	background-image: url("/images/rainbow.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .loginform {
-	margin-left: 5px
+	margin-left: 5px;
 }
 </style>
 <meta charset="ISO-8859-1">
@@ -22,12 +28,13 @@
 <title>phone_directory</title>
 </head>
 <body>
-	<h1 align="center">Welcome to the phone directory!</h1>
+	<h1 align="center" class="text-info">Welcome to the phone
+		directory!</h1>
 	<img align="bottom" alt=""
 		src="https://www.animatedimages.org/data/media/202/animated-dog-image-0175.gif">
-	<div class="container-fluid" id="navbar">
+	<div id="navbar">
 		<nav
-			class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark">
+			class="navbar navbar-expand-lg navbar-expand-sm navbar-light bg-light navbar navbar-dark bg-dark">
 			<div class="container-fluid">
 				<img src="/images/landline.jpg" width="30" height="30" alt="">
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -57,19 +64,19 @@
 			</div>
 		</nav>
 	</div>
-	<form class="mx-auto card p-3 bg-light" style="width: 300px; margin-top: 10px">
-		<div>
-			<label for="exampleInputEmail1" class="form-label">Email
-				address</label> <input type="email" class="form-control"
-				id="exampleInputEmail1" aria-describedby="emailHelp">
-			<div id="emailHelp" class="form-text"></div>
-		</div>
-		<div class="mb-3">
-			<label for="exampleInputPassword1" class="form-label">Password</label>
-			<input type="password" class="form-control"
-				id="exampleInputPassword1">
-		</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
-	</form>
+	<!-- below the nav bar -->
+	<div style="background-color: orange;">
+		<form class="mx-auto card p-5 bg-dark"
+			style="width: 500px; margin-top: 1em; border: 1px solid black">
+			<div>
+				<label class="form-label text-info">Email address</label> <input type="email"
+					class="form-control">
+			</div>
+			<div class="mb-3">
+				<label class = "form-label text-info">Password</label> <input type="password" class="form-control">
+			</div>
+			<button type="submit" class="btn btn-danger">Submit</button>
+		</form>
+	</div>
 </body>
 </html>
