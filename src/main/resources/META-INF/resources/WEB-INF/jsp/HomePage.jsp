@@ -66,14 +66,14 @@ body {
 	</div>
 	<!-- below the nav bar -->
 	<div style="background-color: orange;">
-		<form class="mx-auto card p-5 bg-dark"
+		<form method="get" action="loginuser" class="mx-auto card p-5 bg-dark"
 			style="width: 500px; margin-top: 1em; border: 1px solid black">
 			<div>
-				<label class="form-label text-info">Email address</label> <input type="email"
+				<label class="form-label text-info">Email address</label> <input name="email" type="email"
 					class="form-control">
 			</div>
 			<div class="mb-3">
-				<label class = "form-label text-info">Password</label> <input type="password" class="form-control">
+				<label class = "form-label text-info">Password</label> <input name="password" type="password" class="form-control">
 			</div>
 			<button type="submit" class="btn btn-danger">Submit</button>
 		</form>
