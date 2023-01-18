@@ -10,7 +10,8 @@ import com.smartcontactmanager.entity.User;
 import com.smartcontactmanager.service.userService;
 
 @Controller
-public class UserController {
+public class UserController 
+{
 	
 	@Autowired
 	userService userService;
@@ -22,9 +23,13 @@ public class UserController {
 	}
     
     @GetMapping("/loginuser")
-    public void loginUser(@RequestParam("email") String useremail, @RequestParam("password") String userpassword)
+    public String loginUser(@RequestParam("email") String useremail, @RequestParam("password") String userpassword)
     {
      User user = userService.checkCredentials(useremail);
-     System.out.println("this is user : "+user);
+     if(userpassword.equals(user.getPassword()))
+     {
+    	 return "success";
+     }
+     return "HomePage";
     }
 }
