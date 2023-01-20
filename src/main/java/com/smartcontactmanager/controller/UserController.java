@@ -32,4 +32,10 @@ public class UserController
      }
      return "HomePage";
     }
+    
+    @GetMapping("/registeruser")
+    public String registerUser()
+    {
+    	return "Registration";
+    }
 }
