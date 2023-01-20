@@ -76,7 +76,7 @@ body {
 				<label class = "form-label text-info">Password</label> <input name="password" type="password" class="form-control">
 			</div>
 			<button type="submit" class="btn btn-danger">Submit</button>
-			<span style="margin-top:20px; margin-bottom: -20px; color:white; text-align: center;">Don't have an account? <a href="${pageContext.request.contextPath}/registeruser">click</a></span>
+			<span style="margin-top:20px; margin-bottom: -20px; color:white; text-align: center;">Don't have an account? <a href="${pageContext.request.contextPath}/registeruser">Sign In</a></span>
 		</form>
 	</div>
 </body>
