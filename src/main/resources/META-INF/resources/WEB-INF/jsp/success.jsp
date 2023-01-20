@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<% response.setHeader("Refresh", "2;url=http://localhost:8080/home"); %>
 	<h1>You've logged in successfully!</h1>
 </body>
 </html>
