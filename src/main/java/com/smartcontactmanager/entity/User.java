@@ -115,7 +115,4 @@ public class User {
 		return "User [id=" + id + ", email=" + email + ", password=" + password + ", imageUrl=" + imageUrl + ", about="
 				+ about + ", name=" + name + ", role=" + role + ", enabled=" + enabled + ", userList=" + userList + "]";
 	}
-	
-	
-	
 }
