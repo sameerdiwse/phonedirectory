@@ -74,14 +74,7 @@
 					class="form-control" id="inputPassword4" placeholder="Password">
 			</div>
 		</div>
-		<div class="form-group">
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="gridCheck">
-				<label class="form-check-label" for="gridCheck"> Check me
-					out </label>
-			</div>
-		</div>
-		<button type="submit" class="btn btn-primary">Sign in</button>
+		<button type="submit" class="btn btn-primary" style="margin-top: 20px; width:200px; margin-left: 40%">Sign in</button>
 	</form>
 	</div>
 </body>
