@@ -16,7 +16,7 @@
 	<nav class="navbar navbar-light bg-dark">
 		<span style="color:white;margin-left:42%;font-size: 20pt">Registration Form</span>
 	</nav>
-	<div class="mx-5" style="border-style:ridge; border-width: 5px">
+	<div class="mx-5" style="border-style:ridge; border-width: 5px;  margin-bottom: 20px">
 	<form class="card p-5 bg-light m-100" style="border:1px;">
 		<div class="form-row">
 			<div class="form-group col-md-6">
@@ -74,7 +74,7 @@
 					class="form-control" id="inputPassword4" placeholder="Password">
 			</div>
 		</div>
-		<button type="submit" class="btn btn-primary" style="margin-top: 20px; width:200px; margin-left: 40%">Sign in</button>
+		<button type="submit" class="btn btn-primary" style="margin-top: 20px; width:200px; margin-left: 40%">Register</button>
 	</form>
 	</div>
 </body>
