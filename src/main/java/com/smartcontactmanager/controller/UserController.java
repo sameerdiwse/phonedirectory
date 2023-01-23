@@ -3,6 +3,7 @@ package com.smartcontactmanager.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -37,6 +38,12 @@ public class UserController
     public String registerUser()
     {
     	return "Registration";
+    }
+    
+    @PostMapping("/registeruser")
+    public void registerUser0(User user)
+    {
+    	userService.registerUser(user);
     }
 
 // for update handler.

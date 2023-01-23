@@ -36,7 +36,7 @@ public class User {
 	private boolean enabled;
 	
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-	private List<User> userList = new ArrayList<>();
+	private List<Contact> userList = new ArrayList<>();
 
 	public int getId() {
 		return id;
@@ -102,11 +102,11 @@ public class User {
 		this.enabled = enabled;
 	}
 
-	public List<User> getUserList() {
+	public List<Contact> getUserList() {
 		return userList;
 	}
 
-	public void setUserList(List<User> userList) {
+	public void setUserList(List<Contact> userList) {
 		this.userList = userList;
 	}
 

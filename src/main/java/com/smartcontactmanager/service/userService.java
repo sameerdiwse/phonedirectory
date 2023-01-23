@@ -16,4 +16,8 @@ public class userService
 	{
 		return userDao.getByEmail(useremail);
 	}
+
+	public void registerUser(User user) {
+		
+	}
 }
