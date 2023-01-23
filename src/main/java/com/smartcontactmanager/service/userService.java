@@ -17,7 +17,7 @@ public class userService
 		return userDao.getByEmail(useremail);
 	}
 
-	public void registerUser(User user) {
-		
+	public User registerUser(User user) {
+		return userDao.save(user);
 	}
 }

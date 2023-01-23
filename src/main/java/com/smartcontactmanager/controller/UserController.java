@@ -1,11 +1,14 @@
 package com.smartcontactmanager.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.smartcontactmanager.entity.User;
 import com.smartcontactmanager.service.userService;
@@ -41,9 +44,16 @@ public class UserController
     }
     
     @PostMapping("/registeruser")
-    public void registerUser0(User user)
+    public String registerUser0(User user,HttpSession session)
     {
-    	userService.registerUser(user);
+    	User userdata = userService.registerUser(user);
+    	if(!(userdata==null))
+    	{
+    		 session.setAttribute("message", "User is registered.");
+    		 return "Registration";
+    	}
+    	 session.setAttribute("message", "User is not registered.");
+    	 return "Registration";
     }
 
 // for update handler.
