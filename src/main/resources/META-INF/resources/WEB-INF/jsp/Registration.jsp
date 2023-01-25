@@ -13,6 +13,7 @@
 <title>Registration Page</title>
 </head>
 <body>
+"${message}"
 	<nav class="navbar navbar-light bg-dark">
 		<span style="color:white;margin-left:42%;font-size: 20pt">Registration Form</span>
 	</nav>
