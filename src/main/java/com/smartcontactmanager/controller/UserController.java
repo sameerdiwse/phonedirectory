@@ -4,6 +4,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -44,13 +45,13 @@ public class UserController
     }
     
     @PostMapping("/registeruser")
-    public String registerUser0(User user,HttpSession session)
+    public String registerUser0(User user,HttpSession session, ModelMap map)
     {
     	User userdata = userService.registerUser(user);
     	if(!(userdata==null))
     	{
-    		 session.setAttribute("message", "User is registered.");
-    		 return "Registration";
+    		map.addAttribute("register", "user registered successfully.");
+    		 return "RegisterSuccess";
     	}
     	 session.setAttribute("message", "User is not registered.");
     	 return "Registration";
