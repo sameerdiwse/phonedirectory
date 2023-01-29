@@ -58,11 +58,6 @@ public class UserController
     	 return "Registration";
     }
     
-    @PatchMapping("/updateuser")
-    public void updateUser(User user)
-    {
-    	
-    }
 
 // for update handler.
     
