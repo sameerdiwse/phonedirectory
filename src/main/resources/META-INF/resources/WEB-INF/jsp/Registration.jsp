@@ -33,10 +33,10 @@
 				<label for="inputEmail4">Name</label> <input type="text" name="name"
 					class="form-control" id="inputEmail4" placeholder="Email">
 			</div>
-			<div class="form-group col-md-6">
+			<!-- <div class="form-group col-md-6">
 				<label for="inputPassword4">Is Enabled</label> <input type="text" name="enabled"
 					class="form-control" id="inputPassword4" placeholder="Password">
-			</div>
+			</div> -->
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-6">
