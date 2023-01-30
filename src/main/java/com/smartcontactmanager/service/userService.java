@@ -20,4 +20,8 @@ public class userService
 	public User registerUser(User user) {
 		return userDao.save(user);
 	}
+
+	public void updateUser(User user) {
+		
+	}
 }
