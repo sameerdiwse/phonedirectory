@@ -59,11 +59,6 @@ public class UserController
     	 return "Registration";
     }
     
-    @PutMapping("/updateuser")
-    public void updateUser(User user)
-    {
-    	userService.updateUser(user);
-    }
 
 // for update handler.
     
