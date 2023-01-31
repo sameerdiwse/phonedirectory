@@ -21,4 +21,9 @@ public class userService
 		return userDao.save(user);
 	}
 
+	public void updateUser() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
