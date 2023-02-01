@@ -11,6 +11,7 @@ public class userService
 {
 	@Autowired
 	UserDao userDao;
+//	.
 	
 	public User checkCredentials(String useremail) 
 	{

@@ -62,7 +62,7 @@ public class UserController
     @PatchMapping("/updateuser")
     public void updateUser()
     {
-    	
+    	userService.updateUser();
     }
 
 }
