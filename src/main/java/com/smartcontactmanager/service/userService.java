@@ -23,7 +23,6 @@ public class userService
 	}
 
 	public void updateUser() {
-		// TODO Auto-generated method stub
 		
 	}
 
