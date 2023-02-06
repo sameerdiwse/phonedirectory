@@ -21,10 +21,6 @@ public class userService
 		return userDao.save(user);
 	}
 	
-	public void updateUser()
-	{
-		userDao.save(null);
-	}
 
 
 }
