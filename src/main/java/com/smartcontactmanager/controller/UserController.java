@@ -59,5 +59,11 @@ public class UserController
     	 return "Registration";
     }
     
+    @GetMapping("javatask")
+    public String javaTask()
+    {
+    	return "javatask";
+    }
+    
 //.    
 }
