@@ -34,6 +34,7 @@ public class User {
 	private String role;
 	@Column(name = "userenabled")
 	private boolean enabled;
+	private String userStatus;
 	
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
 	private List<Contact> userList = new ArrayList<>();
