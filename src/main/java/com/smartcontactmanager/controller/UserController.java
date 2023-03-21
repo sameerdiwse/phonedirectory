@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.smartcontactmanager.entity.User;
 import com.smartcontactmanager.service.userService;
-
+//
 @Controller
 public class UserController 
 {
